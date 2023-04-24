@@ -63,6 +63,22 @@ function HomePage() {
                                 }
                             />
                         </div>
+                        
+                    </div>
+                    <div className="podcast-item">
+                        <img src="https://imgs.search.brave.com/E7oE_hCxpJCmvwnr38rOuo_NzoQPKAu00vVLTFHGT9U/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZW50/ZXJzdGFnZS10aGVh/dGVyLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvc2l0ZXMvNC8y/MDE5LzA1L3N0YW5k/LXVwLWNvbWVkeS1u/ZW9uLXNpZ24uanBn" alt="Podcast" />
+                        <div className="play-button">
+                            <FaPlay
+                                size={30}
+                                opacity={3}
+                                onClick={() =>
+                                    handlePlay(
+                                        "video",
+                                        "https://youtu.be/KBZfnt80s54"
+                                    )
+                                }
+                            />
+                        </div>
                     </div>
                     {/* Add more podcast items here */}
                 </div>

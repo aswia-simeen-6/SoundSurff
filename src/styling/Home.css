@@ -1,3 +1,4 @@
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -6,9 +7,10 @@
 
 .banner {
   background-color: #1cbcd4;
+  background-image: url("https://cdn.shopify.com/s/files/1/0070/7032/files/best-business-podcasts.png?format=jpg&quality=90&v=1677720226");
   padding: 4rem 2rem;
-  text-align: center;
-  color: #fff;
+  text-align: left;
+  color: #b50606;
 }
 
 .banner h1 {
