@@ -1,0 +1,116 @@
+#auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0707aa;
+    background-image: url("https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=740&t=st=1682346082~exp=1682346682~hmac=77a9ad3a47099d0ad09dc4d6a79ec5757f90b1c338fb4d658451a7416183e42f"
+    );
+  }
+  
+  #auth-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    height: 500px;
+    width: 400px;
+
+  }
+  
+  #auth-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #auth-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #auth-form input[type='text'],
+  #auth-form input[type='email'],
+  #auth-form input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #auth-form button[type='submit'] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5b5eff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  #auth-form button[type='submit']:hover {
+    background-color: #4a4aff;
+  }
+  
+  #auth-form p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #auth-form p a {
+    color: #5b5eff;
+    text-decoration: underline;
+  }
+  
+  #auth-form p a:hover {
+    color: #4a4aff;
+  }
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input {
+    width: 6%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 40%;
+    border: 2px solid #ccc;
+    outline: none;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group label {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .signup-button {
+    background-color: #ff8400;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover {
+    background-color: #ffad5c;
+  }

@@ -1,0 +1,28 @@
+.categories {
+    margin: 50px;
+  }
+  
+  .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .category {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  
+  .category img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+  }
+  
+  .category h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,111 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #212121;
+  color: #fff;
+  height: 50px;
+}
+
+
+h2 img {
+  height: 80px;
+  width: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+nav ul li {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff5a5f;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+#login-button,
+#signup-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  color: #212121;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#login-button:hover,
+#signup-button:hover {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+#home-link {
+  font-weight: 700;
+}
+nav form {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav form input[type="text"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+nav form button[type="submit"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0077FF;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav form button[type="submit"]:hover {
+  background-color: #0066CC;
+}
+#creator-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#creator-button:hover {
+  background-color: #3e8e41;
+}

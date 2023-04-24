@@ -1,0 +1,147 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.banner {
+  background-color: #1cbcd4;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.8rem;
+}
+
+.podcast-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.podcast-item {
+  position: relative;
+}
+
+.podcast-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.podcast-item:hover .play-button {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.play-button img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.play-button:hover img {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+.player {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.player audio,
+.player video {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.player audio::-webkit-media-controls-start-playback-button,
+.player video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+.player audio::-webkit-media-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player audio::-webkit-media-controls-enclosure,
+.player video::-webkit-media-controls-enclosure {
+  background-color: transparent;
+  border: none;
+}
+
+.player audio::-webkit-media-controls-play-button,
+.player audio::-webkit-media-controls-pause-button,
+.player video::-webkit-media-controls-play-button,
+.player video::-webkit-media-controls-pause-button {
+  display: none;
+}
+
+.player audio::-webkit-media-controls-current-time-display,
+.player audio::-webkit-media-controls-time-remaining-display,
+.player video::-webkit-media-controls-current-time-display,
+.player video::-webkit-media-controls-time-remaining-display {
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.player audio::-webkit-media-controls-volume-slider,
+.player video::-webkit-media-controls-volume-slider {
+  margin: 0 10px;
+}
+
+.player audio::-webkit-media-controls-mute-button,
+.player audio::-webkit-media-controls-unmute-button,
+.player video::-webkit-media-controls-mute-button,
+.player video::-webkit-media-controls-unmute-button {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.player audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb,
+.player video::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.player audio::-webkit-media-controls-volume-slider::-webkit-slider-runnable-track,
+.player video::-webkit-media-controls-volume-slider::-webkit-slider-runnable-track {
+  height: 3px;
+  background-color: #ccc;
+  border-radius: 1.5px;
+}
